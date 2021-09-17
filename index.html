@@ -5,59 +5,54 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Carlos Eduardo">
+    <link rel="stylesheet" type="text/css" href="style.css" > 
     <title>Biomedic data</title>
 </head>
 <body>
-    <div>
-        <h2>Biomedic data</h2>
+    <header>
+        <h1>Biomedic data</h1>
+    </header>
+    <div>    
+        <form>
+            <div class="patient_input">
+                <label for="patient">Patient:</label> <br>
+                <input type="text" id="patient" required/>
+            </div>
+            <div class="date_time">
+                <label for="day">Day:</label>
+                <input type="date" id="day" required/><br>
+                <label for="time">Time:</label>
+                <input type="time" id="time" required/>
+            </div>
+        <br>
+        <div id="bio_data">
+                    <label for="hr">Heart rate:</label> <br>
+                    <input type="number" id="hr" /> <br>
+
+                    <label for="spo2">Oxygenation:</label> <br>
+                    <input type="number" id="spo2" /> <br>
+
+                    <label for="temp">Temperature:</label> <br>
+                    <input type="number" id="temp" /> <br>
+
+                    <label for="glc">Glucose:</label> <br>
+                    <input type="number" id="glc" /> <br>
+
+                    <label for="abps">Systolic pressure:</label> <br>
+                    <input type="number" id="abps" /> <br>
+
+                    <label for="abpd">Diastolic pressure:</label> <br>
+                    <input type="number" id="abpd" /> <br>
+
+        </div>
+        <br>
+        <label for="symptoms">Symptoms:</label>
+        <textarea name="tesymptomsxt" id="symptoms"  cols="30" rows="4"></textarea> <br>
+        <br>
+        <button type="submit" class="button">Send</button>
+        </form>
     </div>
-    <form>
-        <div>
-            <label for="patient">Patient:</label>
-            <input type="text" id="patient" />
-        </div>
-        <div>
-            <label for="day">Day:</label>
-            <input type="date" id="day" />
-        </div>
-        <div>
-            <label for="time">Time:</label>
-            <input type="time" id="time" />
-        </div>
-        <ul>
-            <div>
-                <label for="hr">Heart rate:</label>
-                <input type="number" id="hr" />
-            </div>
-            <div>
-                <label for="spo2">Oxygenation:</label>
-                <input type="number" id="spo2" />
-            </div>
-            <div>
-                <label for="temp">Temperature:</label>
-                <input type="number" id="temp" />
-            </div>
-            <div>
-                <label for="glc">Glucose:</label>
-                <input type="number" id="glc" />
-            </div>
-            <div>
-                <label for="abps">Systolic pressure:</label>
-                <input type="number" id="abps" />
-            </div>
-            <div>
-                <label for="abpd">Diastolic pressure:</label>
-                <input type="number" id="abpd" />
-            </div>
-            <div>
-                <label for="symptoms">Symptoms:</label>
-                <input type="text" id="symptoms" />
-            </div>
-        </ul>
-        <div class="button">
-            <button type="submit">Send</button>
-        </div>
-    </form>
+
 </body>
 
 </html>
